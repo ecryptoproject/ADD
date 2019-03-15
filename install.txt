@@ -1,0 +1,12 @@
+wget https://raw.githubusercontent.com/JoeDiablo/ADD_Sript/master/ADD_install.sh
+
+bash ADD_install.sh
+
+nano ~/.add/add.conf
+
+./addd -daemon
+./addd-cli stop
+./addd -daemon
+./add-cli getinfo
+./addd -daemon -reindex
+./add-cli masternode status
